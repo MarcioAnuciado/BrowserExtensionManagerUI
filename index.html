@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+  
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="extensions">
+      <img src="assets/images/image.png" alt="logo">
+      <h1>Extensions</h1>
+      <i class="ph ph-sun icon"></i>
+    </div>
+
+  </header>
+
+  <div id="Sub-title">
+    <h1>Extensions List</h1>
+    <div onclick="ToggMode()">
+      <button id="buttonall" class="allbutton">
+        All
+      </button>
+      <button class="allbutton">
+        Active
+      </button>
+      <button class="allbutton">
+        Inactive
+      </button>
+    </div>
+  </div>
+  <section>
+
+    <div id="extensionList">
+
+      <div class="list">
+        <div class="img-text">
+          <img src="assets/images/logo-devlens.svg" alt="logo-devlens">
+          <div class="text-List">
+            <h4>Dev lens</h4>
+            <p>Quicky inspect page layouts and visualize element baundaries</p>
+          </div>
+        </div>
+        <div class="buttons-list">
+          <button class="button-remove">
+          Remove
+        </button>
+          <div class="background-button-list">
+            <button onclick="" class="button-list">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="list">
+        <div class="img-text">
+          <img src="assets/images/logo-style-spy.svg" alt="logo style">
+          <div class="text-List">
+            <h4>StyleSpy</h4>
+            <p>Instantly analyze and copy CSS from any webpages emlement.</p>
+          </div>
+        </div>
+        <div class="buttons-list">
+          <button class="button-remove">
+          Remove
+        </button>
+          <div class="background-button-list">
+            <button onclick="" class="button-list">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="list">
+        <div class="img-text">
+          <img src="assets/images/logo-speed-boost.svg" alt="logo speed boost">
+          <div class="text-List">
+            <h4>SpeedBoost</h4>
+            <p>Optimizes browser resource usage to acelerate page loading.</p>
+          </div>
+        </div>
+        <div class="buttons-list">
+          <button class="button-remove">
+          Remove
+        </button>
+          <div class="background-button-list">
+            <button onclick="" class="button-list">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="list">
+        <div class="img-text">
+          <img src="assets/images/logo-json-wizard.svg" alt="logo- json wizard">
+          <div class="text-List">
+            <h4>JSONWizard</h4>
+            <p>Formats, validates, and prettifies JSON response in-browser.</p>
+          </div>
+        </div>
+        <div class="buttons-list">
+          <button class="button-remove">
+          Remove
+          </button>
+            <div class="background-button-list">
+            <button onclick="" class="button-list"></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list">
+        <div class="img-text">
+          <img src="assets/images/logo-tab-master-pro.svg" alt="logo tab master pro">
+          <div class="text-List">
+            <h4>TabMaster Pro</h4>
+            <p>organizes browser tabs into groups and sessions.</p>
+          </div>
+        </div>
+        <div class="buttons-list">
+          <button class="button-remove">
+          Remove
+          </button>
+            <div class="background-button-list">
+            <button onclick="" class="button-list"></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list">
+        <div class="img-text">
+          <img src="assets/images/logo-viewport-buddy.svg" alt="viewport buddy">
+          <div class="text-List">
+            <h4>viewportBuddy</h4>
+            <p>Simulates various screen resolutions directly within the browser.</p>
+          </div>
+        </div>
+        <div class="buttons-list">
+          <button class="button-remove">
+          Remove
+          </button>
+            <div class="background-button-list">
+            <button onclick="" class="button-list"></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list">
+        <div class="img-text">
+          <img src="assets/images/logo-markup-notes.svg" alt="Markup Notes">
+          <div class="text-List">
+            <h4>Markup Notes</h4>
+            <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+          </div>
+        </div>
+        <div class="buttons-list">
+          <button class="button-remove">
+          Remove
+          </button>
+            <div class="background-button-list">
+            <button onclick="" class="button-list"></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list">
+        <div class="img-text">
+          <img src="assets/images/logo-grid-guides.svg" alt="GridGuides">
+          <div class="text-List">
+            <h4>GridGuides</h4>
+            <p>overlay customizable grids and alignment guides on any webpages.</p>
+          </div>
+        </div>
+        <div class="buttons-list">
+          <button class="button-remove">
+          Remove
+          </button>
+            <div class="background-button-list">
+            <button onclick="" class="button-list"></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list">
+        <div class="img-text">
+          <img src="assets/images/logo-palette-picker.svg" alt="logo-palette-picker">
+          <div class="text-List">
+            <h4>Palette Picker</h4>
+            <p>Instantly extracts color palettes from any webpages.</p>
+          </div>
+        </div>
+        <div class="buttons-list">
+          <button class="button-remove">
+          Remove
+          </button>
+            <div class="background-button-list">
+            <button onclick="" class="button-list"></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list">
+        <div class="img-text">
+          <img src="assets/images/logo-link-checker.svg" alt="logo-link-checker">
+          <div class="text-List">
+            <h4>LinkChecker</h4>
+            <p>Scans and highlights broken links on any page.</p>
+          </div>
+        </div>
+        <div class="buttons-list">
+          <button class="button-remove">
+          Remove
+          </button>
+            <div class="background-button-list">
+            <button onclick="" class="button-list"></button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list">
+        <div class="img-text">
+          <img src="assets/images/logo-dom-snapshot.svg" alt="logo-dom-snapshot">
+          <div class="text-List">
+            <h4>DOM Snapshot</h4>
+            <p>Capture and export DOM structures Quicky.</p>
+          </div>
+        </div>
+        <div class="buttons-list">
+          <button class="button-remove">
+          Remove
+          </button>
+            <div class="background-button-list">
+            <button onclick="" class="button-list"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="list">
+        <div class="img-text">
+          <img src="assets/images/logo-console-plus.svg" alt="logo-console-plus">
+          <div class="text-List">
+            <h4>ConsolePlus</h4>
+            <p>Enhanced developer console with advanced filtering and logging.</p>
+          </div>
+        </div>
+        <div class="buttons-list">
+          <button class="button-remove">
+          Remove
+          </button>
+            <div class="background-button-list">
+            <button onclick="" class="button-list"></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="assets/js/javascipt.js"></script>
+ 
+  <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Marcio Anuciado</a>.
+  </footer>
+</body>
+</html>
