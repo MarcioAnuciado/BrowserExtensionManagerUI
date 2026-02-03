@@ -48,6 +48,7 @@ html {
 body {
     background-image: var(--Dark-Gradient);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 80vw;
     height: 100vh;
     margin: auto;
@@ -95,6 +96,7 @@ img {
 
 .icon:hover {
     background-color: var(--Neutral-600);
+    transition: .5s;
 }
 
 #Sub-title {
@@ -218,8 +220,17 @@ section {
     cursor: pointer;
 }
 
-
+footer {
+    margin: 20px 0px;
+    padding-bottom: 10px;
+}
 
 @media (min-width: 768px) {
-    
+    .img-text {
+        padding-top: 10px;
+    }
+
+    .list {
+        width: 49.6%;
+    }
 }
